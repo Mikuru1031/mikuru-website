@@ -27,7 +27,7 @@ const Home = () => {
           </p>
           <ul className='list-disc pl-4'>
               <li>Next.js</li>
-              <li>MicroCMS</li>
+              <li>microCMS</li>
               <li>生成AI（shadcn, v0）</li>
             </ul>
         </div>
