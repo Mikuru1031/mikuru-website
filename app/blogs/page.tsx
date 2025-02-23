@@ -7,7 +7,6 @@ type Props = {
   id: string
   image: {url: string}
   title: string
-  body: string
   date: string
 }
 

@@ -9,8 +9,8 @@ const Home = () => {
           <div className='relative block w-40 h-40 overflow-hidden rounded-full'>
             <Image 
               src="/icon.jpeg" //配置した画像のパスを記述する。
-              alt="Top Image"
-              layout='fill'
+              alt="Profile picture of Mikuru"
+              fill
             />
           </div>
           <p className='text-xl'>
@@ -22,9 +22,7 @@ const Home = () => {
           </p>
         </div>
         <div className='mt-16 text-sm text-slate-500'>
-          <p>
-            このサイトは以下の技術の練習に作成しました。
-          </p>
+          <p>このサイトは以下の技術の練習に作成しました。</p>
           <ul className='list-disc pl-4'>
               <li>Next.js</li>
               <li>microCMS</li>

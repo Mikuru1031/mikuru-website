@@ -1,5 +1,6 @@
 import React from 'react'
 import { client } from '@/lib/microcms';
+import Image from 'next/image';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
@@ -32,7 +33,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   return (
     <div className='mt-16 w-[100%] md:w-[80%] '>
       <div>
-        <img src={post.image.url} alt="" className='w-full h-56 md:h-80 object-cover' />
+        <Image 
+          src={post.image.url} 
+          alt={post.title} 
+          width={800} 
+          height={320} 
+          className='w-full h-56 md:h-80 object-cover' 
+        />
       </div>
       <h1 className='mt-8 text-4xl'>{post.title}</h1> {/* タイトルを表示 */}
       <span className="text-sm text-gray-500">{dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY-MM-DD')}</span>

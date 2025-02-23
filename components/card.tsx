@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import Image from "next/image"
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
@@ -18,9 +19,11 @@ const Card = (props: Props) => {
   return (
     <li className="bg-white shadow-md rounded-lg overflow-hidden list-none">
       <Link href={"blogs/" + props.id} className="block hover:opacity-75 transition-opacity">
-        <img
+        <Image
           src={props.image.url}
-          alt=""
+          alt={props.title}
+          width={500}
+          height={224}
           className="w-full h-56 object-cover"
         />
         <div className="p-4">
