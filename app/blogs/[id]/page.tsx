@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
   const post = await getBlogPost(id);
 
   return (
-    <div className='mt-16 w-[100%] md:w-[80%] '>
+    <div className='mt-16 mb-8 w-[100%] md:w-[80%]'>
       <div>
         <Image 
           src={post.image.url} 
@@ -43,7 +43,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
       </div>
       <h1 className='mt-8 text-4xl'>{post.title}</h1> {/* タイトルを表示 */}
       <span className="text-sm text-gray-500">{dayjs.utc(post.date).tz('Asia/Tokyo').format('YYYY-MM-DD')}</span>
-      <div className='mt-8' dangerouslySetInnerHTML={{ __html: post.body }} /> {/* 記事本文を表示 */}
+      <div className='mt-8 leading-10' dangerouslySetInnerHTML={{ __html: post.body }} /> {/* 記事本文を表示 */}
     </div>
   );
 }

@@ -17,7 +17,7 @@ type Props = {
 
 const Card = (props: Props) => {
   return (
-    <li className="bg-white shadow-md rounded-lg overflow-hidden list-none">
+    <li className="bg-white shadow-md rounded-xl overflow-hidden list-none">
       <Link href={"blogs/" + props.id} className="block hover:opacity-75 transition-opacity">
         <Image
           src={props.image.url}
@@ -27,7 +27,7 @@ const Card = (props: Props) => {
           className="w-full h-56 object-cover"
         />
         <div className="p-4">
-          <h2 className="text-xl font-semibold mb-2">{props.title}</h2>
+          <h2 className="text-xl">{props.title}</h2>
           <span className="text-sm text-gray-500">{dayjs.utc(props.date).tz('Asia/Tokyo').format('YYYY-MM-DD')}</span>
         </div>
       </Link>

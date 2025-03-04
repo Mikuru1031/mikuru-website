@@ -25,18 +25,21 @@ const Blogs = async () => {
   const posts = await getBlogPosts();
 
   return (
-    <div className='mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
-      {
-        posts.map((post) => (
-          <Card 
-            key={post.id}
-            id={post.id}
-            image={post.image}
-            title={post.title}
-            date={post.date}
-          />
-        ))
-      }
+    <div className="mx-auto py-12">
+      <h1 className="text-4xl font-serif mb-8 text-center">My Blogs</h1>
+      <div className='mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3'>
+        {
+          posts.map((post) => (
+            <Card 
+              key={post.id}
+              id={post.id}
+              image={post.image}
+              title={post.title}
+              date={post.date}
+            />
+          ))
+        }
+      </div>
     </div>
   )
 }
