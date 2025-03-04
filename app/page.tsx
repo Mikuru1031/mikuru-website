@@ -16,13 +16,15 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Image
-            src="/profile_icon.png"
-            alt="Japan flag"
-            width={0}
-            height={0}
-            className={"sm:w-32 sm:h-32 w-24 h-24 rounded-full"}
-          />
+          <div className="min-w-32 min-h-32 relative rounded-full overflow-hidden">
+            <Image
+              src="/profile_icon.png"
+              alt="Japan flag"
+              layout="fill"
+              objectFit="cover"
+              className={"w-full h-full"}
+            />
+          </div>
           <div className="text-lg">
             <p>I am a Web Designer creating in creating beautiful and functional websites.</p>
           </div>
