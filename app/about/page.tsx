@@ -50,7 +50,7 @@ export default function About() {
               </div>
               <div>
                 <div className="font-medium">Code learning website staff</div>
-                <div className="text-sm text-muted-foreground">Dotinstall • Sep/2024 - Dec/2024</div>
+                <div className="text-sm text-muted-foreground">Dotinstall • Aug/2024 - Dec/2024</div>
               </div>
               <div>
                 <div className="font-medium">Web Designer</div>
