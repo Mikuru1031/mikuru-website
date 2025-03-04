@@ -40,7 +40,7 @@ export default function Navbar() {
 
         {/* Mobile navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-b border-border/50 z-50">
+          <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-border/50 z-50">
             <nav className="flex flex-col p-4 space-y-4">
               <Link
                 href="/about"
@@ -57,7 +57,7 @@ export default function Navbar() {
                 Works
               </Link>
               <Link
-                href="/contact"
+                href="/blogs"
                 className="text-foreground/80 hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
