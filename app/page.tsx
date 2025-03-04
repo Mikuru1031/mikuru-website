@@ -19,8 +19,8 @@ export default function Home() {
           <Image
             src="/profile_icon.png"
             alt="Japan flag"
-            width={0}
-            height={0}
+            width={32}
+            height={32}
             className={"sm:w-32 sm:h-32 w-24 h-24 rounded-full"}
           />
           <div className="text-lg">
