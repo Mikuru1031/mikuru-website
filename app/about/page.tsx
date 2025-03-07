@@ -37,6 +37,10 @@ export default function About() {
               <div className="bg-secondary p-2 rounded">Next.js</div>
               <div className="bg-secondary p-2 rounded">Astro</div>
               <div className="bg-secondary p-2 rounded">MicroCMS</div>
+              <div className="bg-secondary p-2 rounded">WordPress</div>
+              <div className="bg-secondary p-2 rounded">Figma</div>
+              <div className="bg-secondary p-2 rounded">Adobe Photoshop</div>
+              <div className="bg-secondary p-2 rounded">Adobe Illustrator</div>
               <div className="bg-secondary p-2 rounded">Responsive Design</div>
             </div>
           </div>
